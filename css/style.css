@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* variables */
+  /* sb: sombra  // cp: cuerpo // ep: elementos del cuerpo */
+}
+body{
+	background-color: #00A7E1;
+}
+.container-main {
+	position: absolute;
+	width: 3.125rem;
+	height: 3.125rem;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: 0.5s;
+	transform: translate(-50%, -50%);
+}
+.container-main .toggle {
+	position: absolute;
+	width: 3.125rem;
+	height: 3.125rem;
+	left: 50%;
+	bottom: 0px;
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 3.125rem;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 0.938rem 0.938rem rgba(0,0,0,0.5);
+	background-color: #b230c4;
+	background-color: #fff;
+	transition: 0.5s;
+	transform: translateX(-50%);
+}
+.container-main.active {
+	width: 18.75rem;
+	height: 16.875rem;
+	border-radius: 0.313rem;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	background-color: #fff;
+}
+.container-main.active .toggle {
+	bottom: -1.563rem;
+}
+ul {
+	width: 100%;
+	transform: scale(0);
+}
+ul li {
+	list-style: none;
+}
+ul li a {
+	display: block;
+	padding: 0.625rem 1.25rem;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #262626;
+	transition: 0.5s;
+}
+ul li a:hover {
+	box-shadow: 0px 0.313rem 0.313rem rgba(0,0,0,0.5);
+	color: #fff;
+	background-color: #262626;
+	transform: scale(1.05) translateY(-5px);
+}
+ul li a .fa {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0.625rem;
+	line-height: 1.5rem;
+	text-align: center;
+	border-radius: 0.25rem;
+	color: #fff;
+	background-color: #000;
+}
+ul li:nth-child(1) a .fa,
+ul li:nth-child(1) a:hover {
+	background-color: #3b5999;
+}
+ul li:nth-child(2) a .fa,
+ul li:nth-child(2) a:hover {
+	background-color: #333;
+}
+ul li:nth-child(3) a .fa,
+ul li:nth-child(3) a:hover {
+	background-color: #e4405f;
+}
+ul li:nth-child(4) a .fa,
+ul li:nth-child(4) a:hover {
+	background-color: #1da1f2;
+}
+ul li:nth-child(5) a .fa,
+ul li:nth-child(5) a:hover {
+	background-color: #25d366;
+}
